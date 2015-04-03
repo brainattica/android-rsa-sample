@@ -3,4 +3,7 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="generate_rsa_keys">Generate RSA keys</string>
+    <string name="encrypt_decrypt">Encrypt / Decrypt</string>
+    <string name="sign_verify">Sign / Verify</string>
 </resources>

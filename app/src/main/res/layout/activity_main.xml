@@ -12,6 +12,7 @@
         android:id="@+id/generate_rsa"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="onClick"
         android:text="@string/generate_rsa_keys"/>
 
     <TextView
@@ -24,6 +25,7 @@
         android:layout_width="match_parent"
         android:enabled="false"
         android:layout_height="wrap_content"
+        android:onClick="onClick"
         android:text="@string/encrypt_decrypt"/>
 
     <TextView
@@ -37,11 +39,14 @@
         android:enabled="false"
         android:layout_height="wrap_content"
         android:text="@string/sign_verify"
+        android:onClick="onClick"
         android:layout_marginBottom="50dip"/>
 
     <Button
+        android:id="@+id/clear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="onClick"
         android:text="@string/clear"/>
 
 </LinearLayout>

@@ -6,19 +6,9 @@ import android.content.SharedPreferences;
 public class Preferences {
 
     public static final String SHARED_PREFERENCES = "SHARED_PREFERENCES";
-    public static final String RSA_GENERATED = "zuul.com.android.RSA_GENERATED";
-    public static final String ACCESS_TOKEN = "zuul.com.android.ACCESS_TOKEN";
-    public static final String RSA_PUBLIC_KEY = "zuul.com.android.RSA_PUBLIC_KEY";
-    public static final String RSA_PRIVATE_KEY = "zuul.com.android.RSA_PRIVATE_KEY";
-    public static final String RSA_SERVER_PUBLIC_KEY = "zuul.com.android.RSA_SERVER_PRIVATE_KEY";
-    public static final String RSA_SERVER_PRIVATE_KEY = "zuul.com.android.RSA_SERVER_PRIVATE_KEY";
-    public static final String EMAIL = "zuul.com.android.EMAIL";
-    public static final String SMARTPHONE = "zuul.com.android.SMARTPHONE";
-    public static final String FIRST_NAME = "zuul.com.android.FIRST_NAME";
-    public static final String LAST_NAME = "zuul.com.android.LAST_NAME";
-    public static final String UUID = "zuul.com.android.UUID";
-    public static final String PROFILE_PHOTO_URL = "zuul.com.android.PROFILE_PHOTO";
-    ;
+    public static final String RSA_GENERATED = "com.brainattica.RSA_GENERATED";
+    public static final String RSA_PUBLIC_KEY = "com.brainattica.RSA_PUBLIC_KEY";
+    public static final String RSA_PRIVATE_KEY = "com.brainattica.RSA_PRIVATE_KEY";
 
     public static SharedPreferences mPreferences;
 

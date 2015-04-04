@@ -6,4 +6,8 @@
     <string name="generate_rsa_keys">Generate RSA keys</string>
     <string name="encrypt_decrypt">Encrypt / Decrypt</string>
     <string name="sign_verify">Sign / Verify</string>
+    <string name="generate_rsa_description">First, you must generate your public/private keypair</string>
+    <string name="encrypt_decrypt_description">Now, you can try to encrypt and decrypt some text that you insert</string>
+    <string name="sign_verify_description">Last step is to sign and verify that the encrypted message comes from the right person</string>
+    <string name="clear">Clear</string>
 </resources>

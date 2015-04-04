@@ -3,22 +3,45 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/generate_rsa_description" />
+
     <Button
         android:id="@+id/generate_rsa"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/generate_rsa_keys"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/encrypt_decrypt_description" />
+
     <Button
         android:id="@+id/encrypt_decrypt"
         android:layout_width="match_parent"
+        android:enabled="false"
         android:layout_height="wrap_content"
         android:text="@string/encrypt_decrypt"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_verify_description" />
 
     <Button
         android:id="@+id/sign_verify"
         android:layout_width="match_parent"
+        android:enabled="false"
         android:layout_height="wrap_content"
-        android:text="@string/sign_verify"/>
+        android:text="@string/sign_verify"
+        android:layout_marginBottom="50dip"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/clear"/>
 
 </LinearLayout>

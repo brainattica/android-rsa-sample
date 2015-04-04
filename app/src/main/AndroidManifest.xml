@@ -20,6 +20,14 @@
             android:name=".ui.activities.GenerateRSAActivity"
             android:label="@string/app_name" />
 
+        <activity
+            android:name=".ui.activities.EncryptOrDecryptActivity"
+            android:label="@string/app_name" />
+
+        <activity
+            android:name=".ui.activities.SingOrVerifyActivity"
+            android:label="@string/app_name" />
+
     </application>
 
 </manifest>

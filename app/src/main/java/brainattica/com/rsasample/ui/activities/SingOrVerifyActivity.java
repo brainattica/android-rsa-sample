@@ -15,5 +15,5 @@ public class SingOrVerifyActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_or_verify);
     }
-    
+
 }

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    style="@style/Container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <TextView
         android:layout_width="match_parent"
@@ -13,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="onClick"
-        android:text="@string/generate_rsa_keys"/>
+        android:text="@string/generate_rsa_keys" />
 
     <TextView
         android:layout_width="match_parent"
@@ -23,10 +25,10 @@
     <Button
         android:id="@+id/encrypt_decrypt"
         android:layout_width="match_parent"
-        android:enabled="false"
         android:layout_height="wrap_content"
+        android:enabled="false"
         android:onClick="onClick"
-        android:text="@string/encrypt_decrypt"/>
+        android:text="@string/encrypt_decrypt" />
 
     <TextView
         android:layout_width="match_parent"
@@ -36,17 +38,17 @@
     <Button
         android:id="@+id/sign_verify"
         android:layout_width="match_parent"
-        android:enabled="false"
         android:layout_height="wrap_content"
-        android:text="@string/sign_verify"
+        android:layout_marginBottom="50dip"
+        android:enabled="false"
         android:onClick="onClick"
-        android:layout_marginBottom="50dip"/>
+        android:text="@string/sign_verify" />
 
     <Button
         android:id="@+id/clear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="onClick"
-        android:text="@string/clear"/>
+        android:text="@string/clear" />
 
 </LinearLayout>

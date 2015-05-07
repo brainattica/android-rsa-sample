@@ -5,4 +5,13 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="Container">
+        <item name="android:paddingEnd">@dimen/abc_button_padding_horizontal_material</item>
+        <item name="android:paddingRight">@dimen/abc_button_padding_horizontal_material</item>
+        <item name="android:paddingLeft">@dimen/abc_button_padding_horizontal_material</item>
+        <item name="android:paddingStart">@dimen/abc_button_padding_horizontal_material</item>
+        <item name="android:paddingBottom">@dimen/abc_button_padding_vertical_material</item>
+        <item name="android:paddingTop">@dimen/abc_button_padding_vertical_material</item>
+    </style>
+
 </resources>

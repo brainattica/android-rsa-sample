@@ -20,7 +20,9 @@
         android:id="@+id/generated"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
         android:layout_centerInParent="true"
+        android:singleLine="false"
         android:text="@string/rsa_key_generated" />
 
 </RelativeLayout>

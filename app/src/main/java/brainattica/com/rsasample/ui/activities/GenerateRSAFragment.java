@@ -21,7 +21,7 @@ import brainattica.com.rsasample.utils.Preferences;
 /**
  * Created by javiermanzanomorilla on 12/05/15.
  */
-public class GenerateRSAFragment extends Fragment implements PagerFlow {
+public class GenerateRSAFragment extends Fragment implements PagerSlide {
 
     private TextView generated;
 

@@ -14,14 +14,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 import brainattica.com.rsasample.R;
-import brainattica.com.rsasample.crypto.Crypto;
 import brainattica.com.rsasample.crypto.RSA;
 import brainattica.com.rsasample.utils.Preferences;
 
 /**
  * Created by javiermanzanomorilla on 12/05/15.
  */
-public class EncryptAndDecryptFragment extends Fragment implements PagerFlow {
+public class EncryptAndDecryptFragment extends Fragment implements PagerSlide {
 
     private TextView textToBeEncrypted;
 

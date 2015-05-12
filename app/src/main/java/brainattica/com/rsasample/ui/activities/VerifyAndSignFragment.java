@@ -20,7 +20,7 @@ import brainattica.com.rsasample.utils.Preferences;
 /**
  * Created by javiermanzanomorilla on 12/05/15.
  */
-public class VerifyAndSignFragment extends Fragment implements PagerFlow {
+public class VerifyAndSignFragment extends Fragment implements PagerSlide {
 
     private TextView encryptedText;
 

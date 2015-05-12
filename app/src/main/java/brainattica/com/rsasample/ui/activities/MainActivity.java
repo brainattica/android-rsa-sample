@@ -36,7 +36,7 @@ public class MainActivity extends ActionBarActivity {
         Preferences.init(this);
         setContentView(R.layout.activity_main);
         setSupportActionBar((android.support.v7.widget.Toolbar) findViewById(R.id.toolbar));
-        setTitle("RSA Sample: " + ((PagerFlow)fragments[0]).getSubtitle());
+        setTitle("RSA Sample: " + ((PagerSlide)fragments[0]).getSubtitle());
         pager = (ViewPager) findViewById(R.id.pager);
         prev = (Button) findViewById(R.id.prev);
         next = (Button) findViewById(R.id.next);
@@ -49,7 +49,7 @@ public class MainActivity extends ActionBarActivity {
 
             @Override
             public void onPageSelected(int position) {
-                PagerFlow f = (PagerFlow) fragments[position];
+                PagerSlide f = (PagerSlide) fragments[position];
                 List<Integer> visibleButtons = f.getVisibleButtons();
                 prev.setVisibility(visibleButtons.contains(R.id.prev) ? View.VISIBLE : View.GONE);
                 next.setVisibility(visibleButtons.contains(R.id.next) ? View.VISIBLE : View.GONE);

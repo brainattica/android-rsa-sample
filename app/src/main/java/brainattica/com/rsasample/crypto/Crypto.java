@@ -25,7 +25,7 @@ import brainattica.com.rsasample.utils.Strings;
  */
 public class Crypto {
 
-    public void writePublicKeyToPreferences(KeyPair key) {
+    public static void writePublicKeyToPreferences(KeyPair key) {
         StringWriter publicStringWriter = new StringWriter();
         try {
             PemWriter pemWriter = new PemWriter(publicStringWriter);
@@ -39,7 +39,7 @@ public class Crypto {
         }
     }
 
-    public void writePrivateKeyToPreferences(KeyPair keyPair) {
+    public static void writePrivateKeyToPreferences(KeyPair keyPair) {
         StringWriter privateStringWriter = new StringWriter();
         try {
             PemWriter pemWriter = new PemWriter(privateStringWriter);

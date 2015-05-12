@@ -30,6 +30,7 @@ public class RSA {
     }
 
     private static final String TAG = RSA.class.getSimpleName();
+
     private static final int KEY_SIZE = 4096;
 
 

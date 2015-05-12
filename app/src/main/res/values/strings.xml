@@ -11,4 +11,7 @@
     <string name="sign_verify_description">Last step is to sign and verify that the encrypted message comes from the right person</string>
     <string name="clear">Clear</string>
     <string name="rsa_key_generated">RSA Key generated</string>
+    <string name="generate_rsa">Generate RSA Key Pair</string>
+    <string name="title">RSA Example</string>
+    <string name="encrypt">Encrypt</string>
 </resources>

@@ -103,21 +103,6 @@ public class RSA {
         }
     }
 
-
-    private byte[] sign(byte[] bytes, String privateKey) throws Exception {
-        Signature signature = Signature.getInstance("SHA256withRSA", "SC");
-        signature.initSign(Crypto.getRSAPrivateKeyFromString(privateKey));
-        signature.update(bytes);
-        return signature.sign();
-    }
-
-
-    private boolean verify(byte[] bytes, String privateKey) throws Exception {
-        Signature signature = Signature.getInstance("SHA256withRSA", "SC");
-        signature.initSign(Crypto.getRSAPrivateKeyFromString(privateKey));
-        return signature.verify(bytes);
-    }
-
     private static class FixedRand extends SecureRandom {
 
         MessageDigest sha;

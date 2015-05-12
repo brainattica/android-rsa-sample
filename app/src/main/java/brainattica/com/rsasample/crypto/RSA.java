@@ -1,6 +1,7 @@
 package brainattica.com.rsasample.crypto;
 
 import android.util.Base64;
+import android.util.Log;
 
 import java.security.Key;
 import java.security.KeyPair;
@@ -52,6 +53,7 @@ public class RSA {
             rsaCipher.init(Cipher.ENCRYPT_MODE, publicKey);
             return rsaCipher.doFinal(toBeCiphred);
         } catch (Exception e) {
+            Log.e(TAG, "Error while encrypting data: " + e.getMessage());
             throw new RuntimeException(e);
         }
     }
@@ -67,6 +69,7 @@ public class RSA {
             rsaCipher.init(Cipher.DECRYPT_MODE, privateKey);
             return rsaCipher.doFinal(encryptedText);
         } catch (Exception e) {
+            Log.e(TAG, "Error while decrypting data: " + e.getMessage());
             throw new RuntimeException(e);
         }
     }

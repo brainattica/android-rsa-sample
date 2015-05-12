@@ -36,7 +36,7 @@ public class MainActivity extends ActionBarActivity {
         Preferences.init(this);
         setContentView(R.layout.activity_main);
         setSupportActionBar((android.support.v7.widget.Toolbar) findViewById(R.id.toolbar));
-        setTitle(getString(R.string.title) + ((PagerFlow)fragments[0]).getSubtitle());
+        setTitle("RSA Sample: " + ((PagerFlow)fragments[0]).getSubtitle());
         pager = (ViewPager) findViewById(R.id.pager);
         prev = (Button) findViewById(R.id.prev);
         next = (Button) findViewById(R.id.next);

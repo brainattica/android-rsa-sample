@@ -33,7 +33,7 @@ public class EncryptAndDecryptFragment extends Fragment implements PagerFlow {
 
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_encrypt_or_decrypt, container);
+        View view = inflater.inflate(R.layout.fragment_encrypt_or_decrypt, container, false);
         textToBeEncrypted = (TextView) view.findViewById(R.id.text_to_be_encrypted);
         encryptedText = (TextView) view.findViewById(R.id.encrypted_text);
         decryptedText = (TextView) view.findViewById(R.id.decrypted_text);
@@ -52,8 +52,8 @@ public class EncryptAndDecryptFragment extends Fragment implements PagerFlow {
                 String message = textToBeEncrypted.getText().toString();
                 String encryptedMessage = RSA.encryptWithStoredKey(message);
                 String decryptedMessage = RSA.decryptWithStoredKey(encryptedMessage);
-                encryptedText.setText(encryptedMessage);
-                decryptedText.setText(decryptedMessage);
+                encryptedText.setText("Encrypted Text: " + encryptedMessage);
+                decryptedText.setText("Decrypted Text: " + decryptedMessage);
 
                 Preferences.putString(Preferences.ENCRYPTED_MESSAGE, encryptedMessage);
             }

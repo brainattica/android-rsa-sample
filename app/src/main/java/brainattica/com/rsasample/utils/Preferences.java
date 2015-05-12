@@ -26,15 +26,15 @@ public class Preferences {
     }
 
     public static void putBoolean(String key, boolean bool) {
-        mPreferences.edit().putBoolean(key, bool).apply();
+        mPreferences.edit().putBoolean(key, bool).commit();
     }
 
     public static void putString(String key, String s) {
-        mPreferences.edit().putString(key, s).apply();
+        mPreferences.edit().putString(key, s).commit();
     }
 
     public static void putInteger(String key, Integer integer) {
-        mPreferences.edit().putInt(key, integer).apply();
+        mPreferences.edit().putInt(key, integer).commit();
     }
 
     public static void clear() {

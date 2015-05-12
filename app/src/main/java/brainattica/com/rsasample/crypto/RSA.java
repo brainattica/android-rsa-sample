@@ -31,12 +31,11 @@ public class RSA {
 
     private static final String TAG = RSA.class.getSimpleName();
 
-    private static final int KEY_SIZE = 4096;
+    private static final int KEY_SIZE = 1024;
 
 
     public static KeyPair generate() {
         try {
-            // Create the public and private keys
             SecureRandom random = new SecureRandom();
             RSAKeyGenParameterSpec spec = new RSAKeyGenParameterSpec(KEY_SIZE, RSAKeyGenParameterSpec.F4);
             KeyPairGenerator generator = KeyPairGenerator.getInstance("RSA", "SC");

@@ -33,7 +33,7 @@
             android:id="@+id/public_key"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:lines="4" />
+            android:lines="5" />
 
         <TextView
             android:layout_width="match_parent"
@@ -44,7 +44,7 @@
             android:id="@+id/private_key"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:lines="4" />
+            android:lines="5" />
 
         <TextView
             android:id="@+id/generated"

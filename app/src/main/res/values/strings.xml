@@ -13,6 +13,8 @@
     <string name="rsa_key_generated">RSA Key generated</string>
     <string name="generate_rsa">Generate RSA Key Pair</string>
     <string name="title">RSA Example</string>
-    <string name="encrypt">Encrypt</string>
+    <string name="encrypt">Encrypt / Decrypt</string>
+    <string name="verify">Verify / Sign</string>
     <string name="message_to_be_encrypted">Message to be encrypted:</string>
+
 </resources>

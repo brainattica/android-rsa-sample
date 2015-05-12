@@ -50,9 +50,14 @@ public class GenerateRSAFragment extends Fragment implements PagerFlow {
                 new Thread(new Runnable() {
                     @Override
                     public void run() {
+                        Preferences.clear();
                         getActivity().runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
+                                completedContainer.setVisibility(View.GONE);
+                                generated.setVisibility(View.GONE);
+                                publicKey.setVisibility(View.GONE);
+                                privateKey.setVisibility(View.GONE);
                                 progress.setVisibility(View.VISIBLE);
                             }
                         });
@@ -79,6 +84,8 @@ public class GenerateRSAFragment extends Fragment implements PagerFlow {
         progress.setVisibility(View.GONE);
         generated.setVisibility(View.VISIBLE);
         completedContainer.setVisibility(View.VISIBLE);
+        publicKey.setVisibility(View.VISIBLE);
+        privateKey.setVisibility(View.VISIBLE);
         privateKey.setText(Crypto.stripPrivateKeyHeaders(Preferences.getString(Preferences.RSA_PRIVATE_KEY)));
         publicKey.setText(Crypto.stripPublicKeyHeaders(Preferences.getString(Preferences.RSA_PUBLIC_KEY)));
     }
